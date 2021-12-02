@@ -1,8 +1,9 @@
-This website contains results, code and pre-trained models from the paper [Sequence-to-sequence modeling for action identification at high temporal resolution](https://arxiv.org/abs/2111.02521) by Aakash Kaku\*, Kangning Liu\*, Avinash Parnandi\*, Haresh Rengaraj Rajamohan, Kannan Venkataramanan, Anita Venkatesan, Audre Wirtanen, Natasha Pandit, Heidi Schambra\^, Carlos Fernandez-Granda\^ [\* - Equal Contribution, \^ - Joint last authors].
+This website contains results, code and pre-trained models from the paper [Sequence-to-sequence modeling for action identification at high temporal resolution](https://arxiv.org/abs/2111.02521) by Aakash Kaku\*, Kangning Liu\*, Avinash Parnandi\*, Haresh Rengaraj Rajamohan, Kannan Venkataramanan, Anita Venkatesan, Audre Wirtanen, Natasha Pandit, Heidi Schambra^, Carlos Fernandez-Granda^ [\* - Equal Contribution, ^ - Joint last authors].
 
 ## Results
+![sensor_video_3 (2)](https://user-images.githubusercontent.com/32464452/144506300-012e0fee-82e7-41f3-adf4-c0cb8c1a320a.gif)
 
-https://user-images.githubusercontent.com/32464452/144504081-e217a9cd-ae15-44d3-ac62-12028ca13a5c.mov
+
 **Seq2seq model predicting extremely fine-grained actions** 
 
 
