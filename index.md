@@ -1,10 +1,10 @@
 This website contains results, code and pre-trained models from the paper [Sequence-to-sequence modeling for action identification at high temporal resolution](https://arxiv.org/abs/2111.02521) by Aakash Kaku\*, Kangning Liu\*, Avinash Parnandi\*, Haresh Rengaraj Rajamohan, Kannan Venkataramanan, Anita Venkatesan, Audre Wirtanen, Natasha Pandit, Heidi Schambra^, Carlos Fernandez-Granda^ [\* - Equal Contribution, ^ - Joint last authors].
 
 ## Results
-![sensor_video_3](https://user-images.githubusercontent.com/32464452/144506546-72d62b1f-7ef2-4cc0-8805-9d6d34aa09cb.gif)
+                  ![sensor_video_3](https://user-images.githubusercontent.com/32464452/144506546-72d62b1f-7ef2-4cc0-8805-9d6d34aa09cb.gif)
 
 ## Seq2seq model predicting extremely fine-grained actions
-![image](https://user-images.githubusercontent.com/32464452/144507087-abf34e2e-c214-47e2-b968-945a3e2a7b99.png)
+                      ![image](https://user-images.githubusercontent.com/32464452/144507087-abf34e2e-c214-47e2-b968-945a3e2a7b99.png)
 
 ### Segmentation models cannot detect boundaries for extremely fine-grained actions
 
