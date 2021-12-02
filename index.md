@@ -7,7 +7,7 @@ This website contains results, code and pre-trained models from the paper [Seque
 
 ## Seq2seq model predicting extremely fine-grained actions
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/32464452/144507087-abf34e2e-c214-47e2-b968-945a3e2a7b99.png" />
+  <img src="https://user-images.githubusercontent.com/32464452/144508990-195293f4-311b-469d-a2cd-92ff2841122e.png" />
 </p>
 Comparison of sequence-to-sequence (seq2seq) and segmentation models. The segmentation model outputs frame-wise action predictions, which can then be converted to a sequence
 estimate by removing the duplicates. The seq2seq model produces a sequence estimate directly.
@@ -35,23 +35,6 @@ Results on action-recognition benchmarks: Seg2seq, the seq2seq model which uses 
 - Count of primitives for StrokeRehab dataset
 ![image](https://user-images.githubusercontent.com/32464452/144508718-6b122fe9-2fe8-4a47-9142-14733c6cd923.png)
 Comparison of ground-truth and predicted mean counts for the different activities in the StrokeRehab dataset. The relative error is very small for structured activities like moving objects on/off a shelf (Shelf), and larger for unstructured activities like brushing.
-
-
-**Stroke Rehab Data 
-- Heirarchy
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/32464452/144506815-39ac0b69-939c-4be4-a5cc-57d021f71072.png" />
-</p>
-
-- Classes
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/32464452/144506691-6eac79de-468e-4b14-abe0-2b2cf6163ff4.png" />
-</p>
-
-- Extremely fine-grained actions
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/32464452/144506926-1115cf21-138c-4927-8ebe-2f0be9df4f57.png" />
-</p>
 
 
 ## Pre-Trained Models and Code
