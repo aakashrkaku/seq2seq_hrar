@@ -2,11 +2,9 @@ This website contains results, code and pre-trained models from the paper [Seque
 
 ## Results
 
-Rafting           |  Snowboard
-:-------------------------:|:-------------------------:
-![](./figures/rafting.gif)  |  ![](./figures/snowboard.gif)
+https://user-images.githubusercontent.com/32464452/144504081-e217a9cd-ae15-44d3-ac62-12028ca13a5c.mov
+**Seq2seq model predicting extremely fine-grained actions** 
 
-**Natural Image Videos Denoised Using UDVD** UDVD trained on the DAVIS train set applied to noisy natural image videos. 
 
 Fluorescence Microscopy 1 | Fluorescence Microscopy 2
 :-------------------------:|:-------------------------:
