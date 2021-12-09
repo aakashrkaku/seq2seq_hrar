@@ -1,6 +1,18 @@
 This website contains results, code and pre-trained models from the paper [Sequence-to-sequence modeling for action identification at high temporal resolution](https://arxiv.org/abs/2111.02521) by Aakash Kaku\*, Kangning Liu\*, Avinash Parnandi\*, Haresh Rengaraj Rajamohan, Kannan Venkataramanan, Anita Venkatesan, Audre Wirtanen, Natasha Pandit, Heidi Schambra^, Carlos Fernandez-Granda^ [\* - Equal Contribution, ^ - Joint last authors].
 
-## Results for StrokeRehab Dataset
+## Quantification of Stroke Rehabilitation
+- Stroke is a leading cause of motor impairment and the numbers for stroke are increasing.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/32464452/145431460-e4154d68-7c80-4ef3-91aa-35faf45ea5b5.png" />
+</p>
+- After stroke, there is some spontaneous recovery that occurs because of brain plasticity, but recovery is often incomplete. However, it is believed that if we intervene early after stroke, therapies like rehabilitation training could improve the recovery.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/32464452/145431790-366a13c0-9ac7-454d-81b4-49e62c8ac01c.png" />
+</p>
+- Rehabilitation training involves repeatedly practicing the activities of daily living -- ADLs. The ADLs are composed of 5 fundamental motions: __reach__, __transport__, __reposition__, __stabilize__ and __idle__. For example, if we want to drink water from a glass, we would start from __idle__, __reach__ for the glass, __transport__ the glass towards our mouth, __transport__ the glass back to the table, and __reposition__ the arms in the starting position.
+- A major question is what is the optimal dose of rehab training. In animal studies, we have quantified the doses. For humans, some studies suggest that we might be under-dosing our patients by a factor of **ten**. But, **the optimal dose of training is unknown**.
+- Currently, the best way to quantify rehabilitation is hand tallying. It takes **one hour** of manual effort to label **one minute** of recorded training. This approach is slow, expensive, and not scalable.
+- Therefore, we attempt to solve this problem by using machine learning to identify fundamental motions automatically from wearable-sensor data in real time. Here, we can see an individual performing an activity. We capture his motion using nine - sensors attached to his upper body. The sensors capture various signals like joint angles, accelerations, and quaternions. Human coders, then, use synchronously recorded video to label the fundamental motions.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/32464452/144506546-72d62b1f-7ef2-4cc0-8805-9d6d34aa09cb.gif" />
 </p>
