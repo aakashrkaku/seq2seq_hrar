@@ -13,20 +13,22 @@ This website contains results, code and pre-trained models from the paper [Seque
 </p>
 
 - Rehabilitation training involves repeatedly practicing the activities of daily living -- ADLs. The ADLs are composed of 5 fundamental motions: __reach__, __transport__, __reposition__, __stabilize__ and __idle__. For example, if we want to drink water from a glass, we would start from __idle__, __reach__ for the glass, __transport__ the glass towards our mouth, __transport__ the glass back to the table, and __reposition__ the arms in the starting position.
-- A major question is what is the optimal dose of rehab training. In animal studies, we have quantified the doses. For humans, some studies suggest that we might be under-dosing our patients by a factor of **ten**. But, **the optimal dose of training is unknown**.
-- Currently, the best way to quantify rehabilitation is hand tallying. It takes **one hour** of manual effort to label **one minute** of recorded training. This approach is slow, expensive, and not scalable.
-- Therefore, we attempt to solve this problem by using machine learning to identify fundamental motions automatically from wearable-sensor data in real time. Here, we can see an individual performing an activity. We capture his motion using nine - sensors attached to his upper body. The sensors capture various signals like joint angles, accelerations, and quaternions. We use seq2seq model for predicting extremely fine-grained actions.
+- A major question is what is the optimal dose of rehab training. In animal studies, we have quantified the doses. For humans, some studies suggest that we might be under-dosing our patients by a factor of ten. But, **the optimal dose of training is unknown**.
+- Currently, the best way to quantify rehabilitation is hand tallying. **It takes one hour of manual effort to label one minute of recorded training**. This approach is slow, expensive, and not scalable.
+- Therefore, we attempt to solve this problem by using **machine learning** to identify fundamental motions automatically from wearable-sensor data in real time. Here, we can see an individual performing an activity. We capture his motion using nine - sensors attached to his upper body. The sensors capture various signals like joint angles, accelerations, and quaternions. We use seq2seq model for predicting extremely fine-grained actions.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/32464452/144506546-72d62b1f-7ef2-4cc0-8805-9d6d34aa09cb.gif" />
 </p>
 
 ## Seq2seq model predicting extremely fine-grained actions
+Comparison of sequence-to-sequence (seq2seq) and segmentation models. The segmentation model outputs frame-wise action predictions, which can then be converted to a sequence
+estimate by removing the duplicates. The seq2seq model produces a sequence estimate directly.
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/32464452/144508990-195293f4-311b-469d-a2cd-92ff2841122e.png" />
 </p>
-Comparison of sequence-to-sequence (seq2seq) and segmentation models. The segmentation model outputs frame-wise action predictions, which can then be converted to a sequence
-estimate by removing the duplicates. The seq2seq model produces a sequence estimate directly.
+
 
 ## Segmentation models cannot detect boundaries for extremely fine-grained actions
 <p align="center">
@@ -41,18 +43,23 @@ where len(G) and len(P) are the lengths of the ground-truth and predicted sequen
 
 ## Results
 - **StrokeRehab dataset**
-![image](https://user-images.githubusercontent.com/32464452/144508233-17f6920b-2c1a-44d0-a5ec-a1bfe1192bd2.png)
 Results on StrokeRehab: Seq2seq outperforms segmentation-based approaches. We report mean (95% confidence interval) which is computed via bootstrapping.
 
+![image](https://user-images.githubusercontent.com/32464452/144508233-17f6920b-2c1a-44d0-a5ec-a1bfe1192bd2.png)
+
 - **Action-recognition benchmarks datasets**
-![image](https://user-images.githubusercontent.com/32464452/144508275-282b8ede-9f09-4c8d-b72e-035984417f01.png)
 Results on action-recognition benchmarks: Seg2seq, the seq2seq model which uses the output of a pretrained segmentation-based model, outperforms segmentation-based approaches.
+
+![image](https://user-images.githubusercontent.com/32464452/144508275-282b8ede-9f09-4c8d-b72e-035984417f01.png)
+
 
 - **Count of primitives for StrokeRehab dataset**
 In stroke rehabilitation, action identification can be used for quantifying dose by counting functional primitives. The figure below shows that the raw2seq version of the seq2seq model produces accurate counts for all activities in the StrokeRehab dataset. Performance is particularly good for structured activities such as moving objects on/off a shelf, in comparison to less structured activities such as brushing, which tend to be more heterogeneous across patients
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/32464452/144508718-6b122fe9-2fe8-4a47-9142-14733c6cd923.png" />
 </p>
+
 Comparison of ground-truth and predicted mean counts for the different activities in the StrokeRehab dataset. The relative error is very small for structured activities like moving objects on/off a shelf (Shelf), and larger for unstructured activities like brushing.
 
 
