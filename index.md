@@ -3,13 +3,13 @@ This website contains results, code and pre-trained models from the paper [Seque
 ## Quantification of Stroke Rehabilitation
 - Stroke is a leading cause of motor impairment and the numbers for stroke are increasing.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/32464452/145431460-e4154d68-7c80-4ef3-91aa-35faf45ea5b5.png" />
+  <img src="https://user-images.githubusercontent.com/32464452/145431460-e4154d68-7c80-4ef3-91aa-35faf45ea5b5.png" width="48"/>
 </p>
 
 - After stroke, there is some spontaneous recovery that occurs because of brain plasticity, but recovery is often incomplete. However, it is believed that if we intervene early after stroke, therapies like rehabilitation training could improve the recovery.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/32464452/145431790-366a13c0-9ac7-454d-81b4-49e62c8ac01c.png" />
+  <img src="https://user-images.githubusercontent.com/32464452/145431790-366a13c0-9ac7-454d-81b4-49e62c8ac01c.png" width="48"/>
 </p>
 
 - Rehabilitation training involves repeatedly practicing the activities of daily living -- ADLs. The ADLs are composed of 5 fundamental motions: __reach__, __transport__, __reposition__, __stabilize__ and __idle__. For example, if we want to drink water from a glass, we would start from __idle__, __reach__ for the glass, __transport__ the glass towards our mouth, __transport__ the glass back to the table, and __reposition__ the arms in the starting position.
