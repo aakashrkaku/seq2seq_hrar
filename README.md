@@ -1,4 +1,4 @@
-Official Implementation of Sequence-to-Sequence Modeling for Action Identification at High Temporal Resolution[https://arxiv.org/abs/2111.02521] and PrimSeq: a deep learning-based pipeline to quantitate rehabilitation training[https://arxiv.org/abs/2112.11330]
+Official Implementation of Sequence-to-Sequence Modeling for Action Identification at High Temporal Resolution[!https://arxiv.org/abs/2111.02521] and PrimSeq: a deep learning-based pipeline to quantitate rehabilitation training[!https://arxiv.org/abs/2112.11330]
 
 
 
