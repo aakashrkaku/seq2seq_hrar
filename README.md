@@ -4,7 +4,7 @@ Official Implementation of "Sequence-to-Sequence Modeling for Action Identificat
 
 
 ### Dataset
-The stroke dataset will be available soon. For the public dataset such as breakfast and 50salads, please check the the official code from ASRF https://github.com/yiskw713/asrf
+The StrokeRehab IMU dataset, including its data splits, are available on https://simtk.org/projects/primseq. For the public dataset such as breakfast and 50salads, please check the the official code from ASRF https://github.com/yiskw713/asrf
 
 We follow the same setting to conduct data split.
 
