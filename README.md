@@ -40,7 +40,7 @@ estimate by removing the duplicates. The seq2seq model produces a sequence estim
 <p align="center">
   <img src="https://user-images.githubusercontent.com/32464452/144508026-c03afa71-b454-484d-bddd-7f990372858e.png" />
 </p>
-Boundary accuracy achieved by the segmentation models vs duration of the actions for several datasets. Boundary-detection accuracy is inversely proportional to action duration.
+Boundary accuracy achieved by the segmentation models vs duration of the actions for several datasets. Boundary-detection accuracy is directly proportional to action duration.
 
 ## Performance Metric
 In order to evaluate sequence predictions we use two metrics based on the Levenshtein distance: edit score (ES) and action error rate (AER) (inspired by the word-error rate metric used in speech recognition). The Levenshtein distance, L(G, P), is the minimum number of insertions, deletions, and substitutions required to convert a predicted sequence P to a ground-truth sequence G. For example, if G = [reach, idle, stabilize] and P = [reach, transport], then L(G, P) = 2 (transport is substituted for idle and stabilize is inserted). We have:
